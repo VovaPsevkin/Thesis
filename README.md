@@ -1,1 +1,13 @@
-# Thesis
+## Classification of bagged sample texts using projections and observations selection
+
+For a long time, science was dominated by an approach in which scientists first proposed a hypothesis driven model of the phenomenon under study, and then tested the predictive power of
+the model in experiments and the validity of their hypotheses. Today, with the spread of machine learning methods in all areas of human activity, the opposite approach to building models, in which the model is formed directly from empirical data, has become more and more popular. Within this context, an important field is the attempt to diagnose conditions from large scale data.
+
+An interesting goal is to apply such a diagnosis is T cell receptor large-scale sequencing. Classification and characterization of the T-cell receptor of the immune system often make it possible to detect current and previous infection events. Interestingly, the adaptive immune system has features similar to machine learning, since it distinguishes dangerous pathogens from safe self-molecules. Each immune-cell-clone has a unique receptor. The binding affinity between receptors and antigenic peptides determines the immunological recognition resulting in an appropriate response. Given a sample composed of a set of sequences per person, the task is to determine to which category it belongs (e.g. had or did not have a disease). We will look at the problem mathematically using a combinatorial approach.
+
+Generally, in classification tasks based on machine learning or statistics, samples belong to different categories. The goal is to determine to which category a sample belongs using the characteristics of that sample. In this research, we will deal with a more complex question assuming several broad categories, each setting the prior probability of many components, we want to
+sample randomly these components and predict the category. We focus on the case where the probability distributions of the different observations are not independent, and the probability
+of sampling similar observations is higher than the probability of sampling distant observations, assuming some metrics. We apply this methodology to the adaptive immune response.
+
+The immune system creates continuously groups of cells with random receptors. In the presence of a pathogen, cells with a receptor that is specific to the pathogen divide, and their clone is expanded. Such clones are more frequently observed than others in random samples of immune system cells. Assuming that receptors reacting to the same pathogen are similar, we propose to detect whether a host has responded to a given pathogen using a combination of metrics on receptor sequences and algorithms for the sample-based selection of broad categories.
+
