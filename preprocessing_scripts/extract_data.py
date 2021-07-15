@@ -1,6 +1,3 @@
-# TODO: NOT REMOVE PART OF FRAMEWORK!!!!!!!!!!!!!!!!
-#  replace after developing
-
 import re
 import os
 from glob import glob

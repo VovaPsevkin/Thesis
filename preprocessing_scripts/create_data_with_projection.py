@@ -37,20 +37,6 @@ v_gene = load_object('binary_files_pickles/v_gene_map.pkl')
 j_gene = load_object('binary_files_pickles/j_gene_map.pkl')
 
 
-# Test Pickles
-# ```Python
-# print(projection)
-# print(v_gene)
-# print(j_gene)
-# ```
-
-# Test Projections
-# ```Python
-# test_1 = ['CSV SVE VEE']
-# projection = joblib.load('binary_files_pickles/projection_tfidf.joblib')
-# projection.transform(test_1)
-# ```
-
 def create_projections_tables(path, projection, v_gene, j_gene):
     df = pd.read_csv(path)
         
@@ -86,18 +72,6 @@ project_files(input_directory, output_directory)
 input_directory = Path('/home/vovaps/Projects/EmersonSoftwareFramework/Data/PreprocessedTest')
 output_directory = Path('/home/vovaps/Projects/EmersonSoftwareFramework/Data/PreprocessedTest_TFIDF')
 project_files(input_directory, output_directory)
-
-# convert to string and comeback
-# 
-# ```Python
-# ggg = convert_array2str(temp[0], projection)
-# print(ggg)
-# 
-# ddd = np.array(list(map(float, ggg.split(','))))
-# ddd
-# ```
-
-# In[ ]:
 
 
 
